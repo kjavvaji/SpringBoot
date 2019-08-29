@@ -1,0 +1,8 @@
+package com.learn.io.repository;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class EmployeeRepo {
+
+}

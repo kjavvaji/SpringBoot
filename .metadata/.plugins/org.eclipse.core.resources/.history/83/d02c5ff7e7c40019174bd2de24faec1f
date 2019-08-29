@@ -1,0 +1,5 @@
+package com.learn.io.model;
+
+public class Alien {
+
+}

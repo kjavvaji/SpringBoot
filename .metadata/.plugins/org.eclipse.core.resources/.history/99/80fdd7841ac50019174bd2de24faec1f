@@ -1,0 +1,5 @@
+package com.learn.io.Repository;
+
+public interface AlienRepo {
+
+}

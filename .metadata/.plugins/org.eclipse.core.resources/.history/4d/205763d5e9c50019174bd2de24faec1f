@@ -1,0 +1,13 @@
+package com.learn.io;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+@Entity
+public class Alien {
+	@Id
+	@GeneratedValue
+	private int aid;
+	private String aName;
+	private String tech;
+}

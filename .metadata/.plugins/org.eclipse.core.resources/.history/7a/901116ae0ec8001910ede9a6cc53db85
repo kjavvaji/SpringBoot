@@ -1,0 +1,7 @@
+package com.learn.io.repository;
+
+import com.learn.io.model.Employee;
+
+public interface JpaRepository  {
+
+}

@@ -1,0 +1,11 @@
+package com.learn.io.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Employee {
+	public int id;
+	public String eName;
+	public String tech;
+	
+}

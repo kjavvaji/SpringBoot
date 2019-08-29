@@ -1,0 +1,30 @@
+package com.learn.io;
+
+import static org.junit.Assert.assertEquals;
+
+import java.io.UnsupportedEncodingException;
+
+import org.junit.Test;
+import org.springframework.http.MediaType;
+import org.springframework.mock.web.MockHttpServletResponse;
+import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+
+public class PostTestCase extends EmployeeSpringBootApplicationTests{
+	@Test
+	public void postTest() throws Exception {
+		MvcResult mvcResult= mockMvc.perform(                        //using mock mvc builder we can handle the mockMvc
+		MockMvcRequestBuilders.post("/addEmployee")
+		.accept(MediaType.APPLICATION_JSON).content("{\n" + 
+				"	\"eName\":\"Hello\",\n" + 
+				"	\"tech\":\"JUnit\"\n" + 
+				"}")
+		.contentType(MediaType.APPLICATION_JSON)
+		).andReturn();
+		MockHttpServletResponse response=mvcResult.getResponse();
+		assertEquals(200,response.getStatus());  //response.getStatus()=201
+		System.out.println("Response:"+response.getContentAsString());
+		//assertEquals("http://localhost:8080/addEmployee",response.getHeader(HttpHeaders.LOCATION));
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.learn.io.Repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.learn.io.model.Alien;
+
+import antlr.collections.List;
+
+public interface AlienRepo extends CrudRepository<Alien,Integer>{
+
+	List<Alien> findByTech(String tech);
+	 
+}

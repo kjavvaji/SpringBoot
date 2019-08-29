@@ -1,0 +1,5 @@
+package com.learn.io.ExceptionHandler;
+
+public class EmployeeNotFoundException {
+
+}

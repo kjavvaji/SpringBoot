@@ -1,0 +1,4 @@
+INSERT INTO Employee VALUES ( 'FirstPerson','Java');
+INSERT INTO Employee VALUES ( 'SecondPerson','Android');
+INSERT INTO Employee VALUES ( 'ThirdPerson','C');
+INSERT INTO Employee VALUES ( 'FourthPerson','Mech');

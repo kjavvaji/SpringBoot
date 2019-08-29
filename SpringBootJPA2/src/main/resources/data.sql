@@ -1,0 +1,4 @@
+INSERT INTO ALIEN VALUES (101,'FirstPerson','Java');
+INSERT INTO ALIEN VALUES (102,'SecondPerson','Android');
+INSERT INTO ALIEN VALUES (103,'ThirdPerson','C');
+INSERT INTO ALIEN VALUES (104,'FourthPerson','Mech');
