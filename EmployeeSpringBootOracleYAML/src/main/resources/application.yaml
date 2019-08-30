@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@192.168.2.80:1521/mssorcl
+    username: MSSUser09
+    password: miracle09
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  
+  jpa:
+    hibernate:
+    ddl-auto: update
+    
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+        show_sql: true
+ 
+
+
+     
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/jsp/
+#      suffix: .jsp
+      
+  profiles:
+    active: prod
+---
+spring:
+    profiles: test
+name: test-YAML
+environment: test
+servers: 
+    - www.abc.test.com
+    - www.xyz.test.com
+ 
+---
+spring:
+    profiles: prod
+name: prod-YAML
+environment: production
+servers: 
+    - www.abc.com
+    - www.xyz.com
