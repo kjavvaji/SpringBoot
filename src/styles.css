@@ -14,9 +14,9 @@ button.btn-submit {
     width: 100%;
 }
 button.btn-regular {
-    background-color:#38547b;
+    background-color:#343a40;
     color: #fff;
-    width: 50%;
+    width: 100%;
 }
 button.btn-submit:focus,button.btn-submit:hover {
     background-color: #38547b;

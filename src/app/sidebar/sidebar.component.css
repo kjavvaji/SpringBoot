@@ -25,4 +25,15 @@
   ul{
     list-style-type: none;
   }
+
+  nav{
+    float: none;
+    margin-bottom: 20px;
+ }
+ nav ul{
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0;
+}
+
   

@@ -1,10 +1,24 @@
 <body>
     <div class="sidenav bg-dark">
-      <a href="#drivers">Drivers</a>
-      <a href="#customers">Customers</a>
-      <a href="users" routerlink="/users">Users</a>
+      <!-- <a href="drivers" [routerlink]= "['/customers']">Drivers</a>
+      <a href="customers" [routerlink]="['/customers']">Customers</a>
+      <a href="users" [routerlink]="['/users']">Users</a>
       <a href="#vehicles">Vehicles</a>
-      <a href="#trips">Trips</a>
-      
+      <a href="#trips">Trips</a> -->
+      <div class="input-field col s2">
+          <button class="btn-medium btn-regular" routerLink="/drivers" type="submit">Drivers</button>
+      </div> 
+      <div class="input-field col s2">
+          <button class="btn-medium btn-regular" routerLink="/customers" type="submit">Customers</button>
+      </div> 
+      <div class="input-field col s2">
+          <button class="btn-medium btn-regular" routerLink="/users" type="submit">Users</button>
+      </div> 
+      <div class="input-field col s2">
+          <button class="btn-medium btn-regular" routerLink="/vehicles" type="submit">Vehicles</button>
+      </div> 
+      <div class="input-field col s2">
+          <button class="btn-medium btn-regular" routerLink="/trips" type="submit">Trips</button>
+      </div> 
     </div>
 </body>
